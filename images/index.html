@@ -1,0 +1,304 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<meta author="Rafael Schüler de Carvalho 2017">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<title>Driverheads Mgmt</title>
+
+<style>
+
+					@media screen and (max-width: 1200px) {
+				.box{
+						width: 40%;
+					}
+					}
+
+					@media screen and (max-width: 600px) {
+				.box{
+						width: 90%;
+					}
+					}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.menu{
+	width: 100%;
+	height: 50px;
+	background-color: #cda400;
+	font-family: 'Arial';
+}
+
+.menu ul{
+
+	list-style: none;
+	position: relative;
+}
+
+.menu ul li{
+	width: 150px;
+	float: left;
+}
+
+.menu a{
+	padding: 15px;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background-color: #cda400;
+	color: #fff;
+}
+
+.menu ul ul{
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu a:hover{
+	background-color: #665100;
+	color: #ffcc00;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #808000;
+}
+
+.menu ul ul li{
+	float: none;
+	border-bottom: solid 1px #997a00;
+}
+
+.menu ul ul li a{
+	background-color: #997a00;
+}
+
+label [for="bt_menu"]{
+	padding: 5px;
+	background-color: #cda400;
+	color: #800000;
+	font-family: "Arial";
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+
+#bt_menu{
+display: none;
+}
+
+label[for="bt_menu"]{
+	display: none;
+}
+
+@media(max-width: 800px){
+label[for="bt_menu"]{
+	display: block;
+}
+
+#bt_menu:checked ~ .menu{
+	margin-left: 0;
+}
+
+.menu{
+	margin-top: 5px;
+	margin-left: -100%;
+	transition: all .4s;
+}
+
+.menu ul li{
+	width: 100%;
+	float: none;
+}
+
+.menu ul ul{
+	position: static;
+	overflow: hidden;
+	max-height: 0;
+	transition: all .4s;
+}
+
+.menu ul li:hover ul{
+	height: auto;
+max-height: 200px;
+}
+}
+
+div#top {
+position: fixed-top;
+top: 0px;
+left:0px;
+	}
+
+div#campo {
+
+text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+position:unset;
+top: 10px;
+left: 10px;
+text-align: left;
+background-color: #5c4900;
+background-image: url("mudas.jpg")
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: xx-large;
+color: #e6b800;
+
+}
+
+div#logotipo {
+
+text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+position:unset;
+top: 10px;
+left: 10px;
+background-color: #ebc632;
+background-image: url("mudas.jpg")
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: xx-large;
+text-align: left;
+color: #ebc632;
+
+}
+
+div#container  {
+
+	width: 100%;
+	height: auto;
+	background: #ffd531;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+
+}
+
+div#box {
+
+	width: 100%;
+	height: auto;
+	background: #ffdf62;
+	margin: 20px;
+	box-sizing:;
+	font-size: 20px;
+
+}
+
+
+
+div#rodape {
+
+text-shadow: -0.06em 0 red, 0.06em 0 cyan;
+position:unset;
+top: 10px;
+left: 10px;
+background-color: #cda400;
+background-image: url("")
+font-style: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: medium;
+text-align: right;
+
+}
+
+</style>
+
+
+
+
+<body bgcolor="#ffd531">
+
+
+
+	<div id="campo">
+Driverheads Mgmt
+	</div>
+
+
+
+<div id="top">
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu"><h1>&#9776;</h1></label>
+
+<nav class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About</a>
+				<ul>
+					<li><a href="driverheads.html">Driverheads</a></li>
+				</ul>
+			</li>
+		
+
+				<li><a href="#">Systems</a>
+				
+				<ul>
+					<li><a href="sistemas.html">Sys Information</a></li>
+				</ul>	
+				
+				<li><a href="#">Contact</a>
+				<ul>
+					<li><a href="contato.html">Contact Page</a></li>
+				</ul>
+			</li>
+			
+			</li>
+	
+		</ul>
+
+	</nav>
+
+</div>
+
+	 <div id="container"> 
+
+         	<div id="box">Driverheads is a media specialist. Driverheads can make an complete Sys information for you.
+         	</div>
+         	<div id="box">
+         		The system is the same this of you are using now. Rapid, responsive and compatible whith all media for internet tecnologies.
+         	</div>
+         	<div id="box">
+         		Contact, the prices are best than !
+         	</div>
+
+      </div>
+
+
+	<hr>
+
+
+  			<div id="logotipo">
+Driverheads Mgmt
+		    </div>
+
+             <div id="rodape">
+
+			 Copyright - Rafael Schüler de Carvalho - All Rights Reserved
+           
+             </div>
+
+
+           
+
+
+
+</body>
+
+</html>
