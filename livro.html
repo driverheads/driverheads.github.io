@@ -1,0 +1,401 @@
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta author="Rafael Schüler de Carvalho 2017">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<title>Prática em transações imobiliárias</title>
+	
+	
+<style>
+
+
+body{
+  margin:0;
+  padding:0;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 900;
+  color: #000;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+main{
+  display: block;
+  background-color: #FFF;
+}
+
+.container{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p{
+  margin-bottom: 40px;
+}
+
+section.module:last-child{
+  margin-bottom: 0;
+}
+
+section.module h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module.content{
+ padding: 40px 0;
+ background: #ece7d5; 
+}
+
+section.module.parallax{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+
+section.module.parallax-1{
+  background-image: url("images/foto111.gif");
+}
+
+section.module.parallax-2{
+  background-image: url("images/foto222.gif");
+}
+
+section.module.parallax-3{
+  background-image: url("images/foto333.gif");
+}
+
+section.module.parallax h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 820px) {
+  section.module h2 {
+    font-size: 32px;
+  }
+  .module h2, p{
+    padding: 0 8px;
+  }
+
+  .container{
+    margin:0;
+    padding:0;
+  }
+
+  section.module.parallax h1 {
+    font-size: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+
+margin: 0;
+padding: 0;
+}
+
+.menu{
+width: 100%;
+height: 50px;
+background-color: #ffA500;
+font-family: 'arial';
+}
+
+.menu ul{
+
+list-style: none;
+position: relative;
+}
+
+.menu ul li{
+width: 150px;
+float: left;
+}
+
+.menu a{
+padding: 15px;
+display: block;
+text-decoration: none;
+text-align: center;
+background-color: #ffA500;
+color: #000000;
+}
+
+.menu ul ul{
+position: absolute;
+visibility: hidden;
+}
+
+.menu ul li:hover ul{
+visibility: visible;
+}
+
+.menu a:hover{
+background-color: #ffffff;
+color: #555;
+}
+
+.menu ul ul li{
+float: none;
+border-bottom: solid 1px #808000;
+}
+
+.menu ul ul li{
+float: none;
+border-bottom: solid 1px #808000;
+}
+
+.menu ul ul li a{
+background-color: #ffffff;
+}
+
+label [for="bt_menu"]{
+padding: 5px;
+background-color: #ffffff;
+color: #800000;
+font-family: "Arial";
+text-align: center;
+font-size: 30px;
+cursor: pointer;
+width: 50px;
+height: 50px;
+}
+
+
+#bt_menu{
+display: none;
+}
+
+label[for="bt_menu"]{
+display: none;
+}
+
+@media(max-width: 800px){
+label[for="bt_menu"]{
+display: block;
+}
+
+#bt_menu:checked ~ .menu{
+margin-left: 0;
+}
+
+.menu{
+margin-top: 5px;
+margin-left: -100%;
+transition: all .4s;
+}
+
+.menu ul li{
+width: 100%;
+float: none;
+}
+
+.menu ul ul{
+position: static;
+overflow: hidden;
+max-height: 0;
+transition: all .4s;
+}
+
+.menu ul li:hover ul{
+height: auto;
+max-height: 200px;
+}
+
+</style>
+
+</head>
+	
+<body bgcolor="ffffff">
+  
+  
+<div id="top">
+	
+	
+
+<input type="checkbox" id="bt_menu">
+<label for="bt_menu"><h1>&#9776;</h1></label>
+
+<nav class="menu" align="center">
+		<ul>
+			<li><a href="comprar.html">comprar</a></li>
+				</ul>
+
+	</nav>
+	
+</div>
+  
+  <img src="images/branco.jpg" alt=""><p>
+  
+  
+  
+  <div class="wrapper">
+    <main>
+      <section class="module parallax parallax-1">
+        <h1>Never Regret </h1><br>
+		<h1></h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          </div>
+      </section>
+      
+	  </p>
+	     	  
+      <p>&nbsp;</p>
+      <section class="module parallax parallax-2">
+      
+        <h1>Design Personalizado</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+        
+        
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+      </section>
+
+      <section class="module parallax parallax-3">
+        <h1>Instagram</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Ecodesigns HALL</h2>
+          <p>
+          
+O Pré projeto  é uma vitrine que conecta o seu terreno ao incorporador </div>
+
+
+      </section>
+    </main>
+  </div>
+
+
+	
+<div id="box">
+
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+        <tr>
+          <td colspan="7" class="pageName">Driverheads MARKETING</td>
+        </tr>
+		<tr>
+         <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+        </tr>
+		<tr>
+          <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		  <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+        </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+		<tr>
+         <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+        </tr>
+		<tr>
+          <td valign="top"><a href="http://www.google.com" target="janela">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		  <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+        </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+      </table>
+
+</div>
+	
+	
+</body>
+</html>
+
