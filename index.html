@@ -1,299 +1,401 @@
 <html>
 <head>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<meta author="Rafael Schüler de Carvalho 2017 - 2020 copyright All Rights Reserved">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	
-	
-	
-<title>Driverheads</title> 
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta author="Rafael Schüler de Carvalho 2017">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
+
+<title>Driverheads MARKETING</title>
+	
+	
 <style>
 
+
+body{
+  margin:0;
+  padding:0;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 900;
+  color: #000;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+main{
+  display: block;
+  background-color: #FFF;
+}
+
+.container{
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p{
+  margin-bottom: 40px;
+}
+
+section.module:last-child{
+  margin-bottom: 0;
+}
+
+section.module h2{
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module.content{
+ padding: 40px 0;
+ background: #ece7d5; 
+}
+
+section.module.parallax{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax:after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100% );
+}
+
+
+section.module.parallax-1{
+  background-image: url("images/fot11.gif");
+}
+
+section.module.parallax-2{
+  background-image: url("images/fot22.gif");
+}
+
+section.module.parallax-3{
+  background-image: url("images/fot33.gif");
+}
+
+section.module.parallax h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 820px) {
+  section.module h2 {
+    font-size: 32px;
+  }
+  .module h2, p{
+    padding: 0 8px;
+  }
+
+  .container{
+    margin:0;
+    padding:0;
+  }
+
+  section.module.parallax h1 {
+    font-size: 36px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 *{
-	margin: 0;
-	padding: 0;
+
+margin: 0;
+padding: 0;
 }
 
 .menu{
-	width: 100%;
-	height: 50px;
-	background-color: #000080;
-	font-family: 'Courier';
+width: 100%;
+height: 50px;
+background-color: #ffA500;
+font-family: 'arial';
 }
 
 .menu ul{
 
-	list-style: none;
-	position: relative;
+list-style: none;
+position: relative;
 }
 
 .menu ul li{
-	width: 150px;
-	float: left;
+width: 150px;
+float: left;
 }
 
 .menu a{
-	padding: 15px;
-	display: block;
-	text-decoration: none;
-	text-align: center;
-	background-color: #000080;
-	color: #fff;
+padding: 15px;
+display: block;
+text-decoration: none;
+text-align: center;
+background-color: #ffA500;
+color: #000000;
 }
 
 .menu ul ul{
-	position: absolute;
-	visibility: hidden;
+position: absolute;
+visibility: hidden;
 }
 
 .menu ul li:hover ul{
-	visibility: visible;
+visibility: visible;
 }
 
 .menu a:hover{
-	background-color: #4169E1;
-	color: #555;
+background-color: #ffffff;
+color: #555;
 }
 
 .menu ul ul li{
-	float: none;
-	border-bottom: solid 1px #808000;
+float: none;
+border-bottom: solid 1px #808000;
 }
 
 .menu ul ul li{
-	float: none;
-	border-bottom: solid 1px #808000;
+float: none;
+border-bottom: solid 1px #808000;
 }
 
 .menu ul ul li a{
-	background-color: #000080;
+background-color: #ffffff;
 }
 
 label [for="bt_menu"]{
-	padding: 5px;
-	font-family: "Courier";
-	text-align: center;
-	font-size: 30px;
-	cursor: pointer;
-	width: 50px;
-	height: 50px;
+padding: 5px;
+background-color: #ffffff;
+color: #800000;
+font-family: "Arial";
+text-align: center;
+font-size: 30px;
+cursor: pointer;
+width: 50px;
+height: 50px;
 }
 
+
 #bt_menu{
-font-size: 0px;
 display: none;
 }
 
 label[for="bt_menu"]{
-	display: none;
+display: none;
 }
 
 @media(max-width: 800px){
 label[for="bt_menu"]{
-	
-	display: block;
+display: block;
 }
 
 #bt_menu:checked ~ .menu{
-	margin-left: 0;
+margin-left: 0;
 }
 
 .menu{
-	margin-top: 5px;
-	margin-left: -100%;
-	transition: all .4s;
+margin-top: 5px;
+margin-left: -100%;
+transition: all .4s;
 }
 
 .menu ul li{
-	width: 100%;
-	float: none;
+width: 100%;
+float: none;
 }
 
 .menu ul ul{
-	position: static;
-	overflow: hidden;
-	max-height: 0;
-	transition: all .4s;
+position: static;
+overflow: hidden;
+max-height: 0;
+transition: all .4s;
 }
 
 .menu ul li:hover ul{
-	height: auto;
+height: auto;
 max-height: 200px;
 }
-}
-
-div#top {
-position: fixed-top;
-top: 0px;
-left:0px;
-	}
-
-div#campo {
-
-text-shadow: -0.06em 0 red, 0.06em 0 cyan;
-position:unset;
-top: 10px;
-left: 10px;
-text-align: right;
-background-color: #330099;
-background-image: url("mudas.jpg")
-font-style: bold;
-font-family:Courier;
-font-size: xx-large;
-
-}
-
-div#logotipo {
-
-text-shadow: -0.06em 0 red, 0.06em 0 cyan;
-position:unset;
-top: 10px;
-left: 10px;
-background-color: #000080;
-background-image: url("mudas.jpg")
-font-style: bold;
-font-family: Courier;
-font-size: xx-large;
-
-}
-
-
-
-
-
-div#container  {
-
-	width: 100%;
-	height: auto;
-	background: #000080;
-
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-flow: wrap;
-
-}
-
-div#box {
-
-	width: 100%;
-	height: auto;
-	background: #000080;
-	margin: 20px;
-	box-sizing:;
-	font-size: 20px;
-
-}
-
-
-
-div#rodape {
-
-
-
-text-shadow: -0.06em 0 red, 0.06em 0 cyan;
-position:unset;
-top: 10px;
-left: 10px;
-background-color: #363636;
-background-image: url("")
-font-style: bold;
-font-family: Courier;
-font-size: medium;
-
-}
-
-
-
-
-
 
 </style>
 
-
 </head>
+	
+<body bgcolor="ffffff">
+  
+  
+<div id="top">
+	
+	
 
-<body bgcolor="#000080">
-
-									<div id="top">
-									
 <input type="checkbox" id="bt_menu">
+<label for="bt_menu"><h1>&#9776;</h1></label>
 
-<label for="bt_menu"><h1>&#9776;</h1> <br></label>
-<hr>
-
-
-<nav class="menu">
-
+<nav class="menu" align="center">
 		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="#">About</a>
-				<ul>
-					<li><a href="frontfoods.html">Front Foods</a></li>
+			<li><a href="comprar.html">comprar</a></li>
 				</ul>
-			</li>
-			
-			<li><a href="#">Products</a>
-				
-				<ul>
-					<li><a href="pereskia.html">Pereskia aculeata</a></li>
-					<li><a href="curcumalonga.html">Curcuma longa</a></li>
-					<li><a href="zingiberofficinale.html">Zingiber officinale</a></li>
-				</ul>	
-				<li><a href="#">Contact</a>
-				<ul>
-					<li><a href="contato.html">Contact Page</a></li>
-				</ul>
-			</li>
-			
-			</li>
-	
-		</ul>
+
 	</nav>
-									</div>
+	
+</div>
+  
 
-	<div id="campo">
-DRIVERHEADS!                                              MARKETING
-	</div>
+  
+  
+  
+  <div class="wrapper">
+    <main>
+      <section class="module parallax parallax-1">
+        <h1>Melhor compra</h1><br>
+		<h1></h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          </div>
+      </section>
+      
+	  </p>
+	     	  
+      <p>&nbsp;</p>
+      <section class="module parallax parallax-2">
+      
+        <h1>Aprenda Marketing</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+        
+        
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+      </section>
+
+      <section class="module parallax parallax-3">
+        <h1>Dê um salto na sua carreira</h1>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Prática em Marketing Digital - Todos os direitos reservados - Copyright 2025 R.Schüler</h2>
+          <p>
+          
+Para você atingir a excelência na profissão.<p>
+ </div>
 
 
-	 <div id="container"> 
-
-         	<div id="box"><img src="">Front Foods is a vendor of Pereskia aculeata (Miller), Curcuma longa and Zingiber officinale.<p>
-         		Pereskia aculeata Miller is a native cactus that can be found in Brazil and is called ‘ora-pro-nobis’ (OPN).
-         	</div>
-         	<div id="box">
-         		OPN leaves showed remarkable levels of total dietary fiber (39.1% dry basis), minerals (calcium, magnesium, manganese and zinc) and vitamins (vitamin A, vitamin C and folic acid).
-         	</div>
-         	<div id="box">
-         		Among amino acids, tryptophan was the most abundant (20.5% of the total amino acids) and sodium dodecyl sulfate-polyacrylamide gel electrophoresis showed small peptides, inferior to 6.5 kDa, and four major bands (61 kDa, 53 kDa, 33 kDa, and 15 kDa).
-         	</div>
-
-      </div>
+      </section>
+    </main>
+  </div>
 
 
-	<hr>
+	
+<div id="box">
 
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+        <tr>
+          <td colspan="7" class="pageName">Driverheads MARKETING</td>
+        </tr>
+		<tr>
+         <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td width="22%" height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+        </tr>
+		<tr>
+          <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		  <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+        </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+		<tr>
+         <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+		  <td>&nbsp;</td>
+		  <td height="100%"><img src="images/foto1.gif" alt="small product photo" width="100%" height="100%" border="0" /></td>
+        </tr>
+		<tr>
+          <td valign="top"><a href="http://www.google.com" target="janela">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		  <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+		 <td>&nbsp;</td>
+		   <td valign="top"><a href="javascript:;">Nombre del producto</a><br />
+		  Precio: $0.00</td>
+        </tr>
+		<tr>
+			<td colspan="7">&nbsp;</td>
+		</tr>
+      </table>
 
-  			<div id="logotipo">
-			Front Foods Market Company                                                        Your acess to superfood plants! 
-		    </div>
-
-             <div id="rodape">
-
-			 Copyright FrontFoods - All Rights Reserved
-           
-             </div>
+</div>
 	
 	
-
-
-           
-
-
-
 </body>
-
 </html>
